@@ -10,7 +10,6 @@ module.exports = class BotClient extends Discord.Client {
         Discord.GatewayIntentBits.GuildInvites,
         Discord.GatewayIntentBits.DirectMessages,
       ],
-      partials: [Discord.Partials.Message],
       shards: "auto",
     });
 
