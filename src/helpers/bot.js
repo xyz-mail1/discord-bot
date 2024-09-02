@@ -4,12 +4,7 @@ const fs = require("node:fs");
 module.exports = class BotClient extends Discord.Client {
   constructor() {
     super({
-      intents: [
-        Discord.GatewayIntentBits.MessageContent,
-        Discord.GatewayIntentBits.Guilds,
-        Discord.GatewayIntentBits.GuildInvites,
-        Discord.GatewayIntentBits.DirectMessages,
-      ],
+      intents: [Discord.GatewayIntentBits.Guilds],
       shards: "auto",
     });
 
